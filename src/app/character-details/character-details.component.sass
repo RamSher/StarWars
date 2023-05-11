@@ -1,0 +1,64 @@
+*
+ padding: 0
+
+.character-list
+  list-style: none
+  padding: 0
+
+  .character-item
+    display: flex
+    align-items: center
+    margin-bottom: 10px
+
+  .title
+    font-weight: bold
+    margin-right: 10px
+
+  .title-data
+    color: white
+
+h1 
+  background-color: #DAA520
+  padding: 10px
+  border-radius: 8px
+
+li
+  display: flex
+  gap: 10rem
+  font-family: sans-serif
+  background-color: #808000
+  padding: 10px
+  border-radius: 8px
+
+.pagination
+  text-align: center
+
+  & button
+    display: inline-block
+    padding: 10px 20px
+    background-color:#556B2F
+    color: white
+    border: none
+    border-radius: 4px
+    text-align: center
+    text-decoration: none
+    font-size: 16px
+    cursor: pointer
+
+@media screen and (max-width: 768px)
+  .character-item
+    
+    display: flex
+    flex-direction: column
+
+  .title
+    margin-right: 0
+    margin-bottom: 5px
+
+  li
+    gap: 1rem
+    padding: 5px
+    justify-content: center
+
+  .pagination
+    margin-top: 10px

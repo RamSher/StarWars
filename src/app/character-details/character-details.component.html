@@ -1,0 +1,52 @@
+<ul *ngIf="showDetails">
+  <li>
+    <div>
+      <ul class="character-list">
+        <li class="character-item">
+          <span class="title">Name:</span>
+          <span class="title-data">{{ datas.name }}</span>
+        </li>
+        <li class="character-item">
+          <span class="title">Height:</span>
+          <span class="title-data">{{ datas.height }}</span>
+        </li>
+        <li class="character-item">
+          <span class="title">Mass:</span>
+          <span class="title-data">{{ datas.mass }}</span>
+        </li>
+        <li class="character-item">
+          <span class="title">Hair Color:</span>
+          <span class="title-data">{{ datas.hair_color }}</span>
+        </li>
+        <li class="character-item">
+          <span class="title">Skin Color:</span>
+          <span class="title-data">{{ datas.skin_color }}</span>
+        </li>
+        <li class="character-item">
+          <span class="title">Eye Color:</span>
+          <span class="title-data">{{ datas.eye_color }}</span>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul class="character-list">
+        <li class="character-item">
+          <span class="title">Birth Year:</span>
+          <span class="title-data">{{ datas.birth_year }}</span>
+        </li>
+        <li class="character-item">
+          <span class="title">Date of creation :</span>
+          <span class="title-data">{{ datas.created }}</span>
+        </li>
+        <li class="character-item">
+          <span class="title">Date of Edition:</span>
+          <span class="title-data">{{ datas.edited }}</span>
+        </li>
+        <li class="character-item">
+          <span class="title">Birth Year:</span>
+          <span class="title-data">Age: 22</span>
+        </li>
+      </ul>
+    </div>
+  </li>
+</ul>

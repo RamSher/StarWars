@@ -1,0 +1,29 @@
+<router-outlet>
+  <ul>
+    <h1>Star Wars Characters</h1>
+    <hr />
+    <li *ngFor="let character of newData">
+      <div>
+        <ul class="character-list">
+          <li class="character-item">
+            <span class="title">Name:</span>
+            <span class="title-data"
+              ><a routerLink="/character/{{ character.name }}">{{
+                character.name
+              }}</a>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="pagination">
+        <button [disabled]="currentPage === 1" (click)="previousPage()">
+          Previous
+        </button>
+        <span>Page {{ currentPage }} of {{ totalPages }}</span>
+        <button [disabled]="currentPage === totalPages" (click)="nextPage()">
+          Next
+        </button>
+      </div>
+    </li>
+  </ul>
+</router-outlet>
